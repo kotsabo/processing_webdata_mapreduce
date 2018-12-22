@@ -1,0 +1,1 @@
+hadoop jar /opt/hadoop/hadoop-2.7.3/share/hadoop/tools/lib/hadoop-streaming-2.7.3.jar -files mapper01.py -input /data/assignments/ex1/webSmall.txt -output /user/$USER/smallResult -mapper mapper01.py -reducer NONE

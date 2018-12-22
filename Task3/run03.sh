@@ -1,0 +1,1 @@
+hadoop jar /opt/hadoop/hadoop-2.7.3/share/hadoop/tools/lib/hadoop-streaming-2.7.3.jar -D mapred.reduce.tasks=1 -files mapper03.py,reducer03.py -input /user/$USER/smallResult2/* -output /user/$USER/smallResult3 -mapper mapper03.py -reducer reducer03.py

@@ -1,0 +1,1 @@
+hadoop jar /opt/hadoop/hadoop-2.7.3/share/hadoop/tools/lib/hadoop-streaming-2.7.3.jar -files mapper06.py,reducer06.py -input /user/$USER/smallResult4/* -output /user/$USER/smallResult6 -mapper mapper06.py -reducer reducer06.py
